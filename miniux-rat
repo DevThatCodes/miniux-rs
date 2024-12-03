@@ -1,0 +1,8 @@
+{
+  "users": {
+    "testuser": {
+      "displayname": "Test User",
+      "password": "1"
+    }
+  }
+}

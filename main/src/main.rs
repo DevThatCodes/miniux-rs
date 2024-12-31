@@ -45,7 +45,7 @@ fn main() {
     // check if password is correct
     if password == jsondata["users"][user]["password"].to_string() {
         println!("password correct!")
-    }
+    } 
     // main loop
     
     let mut running = true;

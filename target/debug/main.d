@@ -1,1 +1,1 @@
-/home/rocky/Desktop/Rust\ Projects/miniux-rs/target/debug/main: /home/rocky/Desktop/Rust\ Projects/miniux-rs/main/src/main.rs
+C:\Users\cupco\coding\miniux-rs\target\debug\main.exe: C:\Users\cupco\coding\miniux-rs\main\src\main.rs

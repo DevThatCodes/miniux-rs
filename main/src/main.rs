@@ -11,12 +11,12 @@ enum ExitMessages {
 
 fn exit_(reason: ExitMessages) {
     let exit_reason = match reason {
-        ExitMessages::ByUser => {"successfully exited Miniux".to_string()}
-        ExitMessages::Crashed => {"uh oh, it seems Miniux has crashed".to_string()}
-        ExitMessages::InvalidUser(user) => {format!("user: {} does not exist", user)}
+        ExitMessages::ByUser => {("successfully exited Miniux".to_string(), 0)}
+        ExitMessages::Crashed => {("uh oh, it seems Miniux has crashed".to_string(), 2)}
+        ExitMessages::InvalidUser(user) => {(format!("user: {} does not exist", user), 1)}
     };
-    println!("{}", exit_reason);
-    exit(1) 
+    println!("{}", exit_reason.0);
+    exit(exit_reason.1)
 }
 
 fn main() {
